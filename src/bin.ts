@@ -342,7 +342,8 @@ function startRepl (service: Register, state: EvalState, code?: string) {
     prompt: '> ',
     input: process.stdin,
     output: process.stdout,
-    terminal: process.stdout.isTTY,
+    // terminal: process.stdout.isTTY,
+    terminal: false,
     eval: replEval,
     useGlobal: true
   })
